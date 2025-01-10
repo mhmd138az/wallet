@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="password-modal" id="password-modal">
+        <div class="modal-content">
+            <h2>Enter Password</h2>
+            <input type="password" id="password-input" placeholder="Enter password">
+            <button id="password-submit">Submit</button>
+            <p id="password-error" class="error-message"></p>
+        </div>
+    </div>
+
+    <div class="wallet-container" id="wallet-container" style="display: none;">
+        <div class="wallet-header">
+            <h1>Crypto Wallet</h1>
+            <span>🪙</span>
+        </div>
+        <div class="balance">
+            <span id="btc-balance">0.5 BTC</span>
+            <span id="usd-balance">≈ $13,500</span>
+        </div>
+        <ul class="transactions" id="transaction-list">
+            <li><span>Received BTC</span><span class="credit">+0.3 BTC</span></li>
+            <li><span>Sent BTC</span><span class="debit">-0.1 BTC</span></li>
+            <li><span>Purchase</span><span class="debit">-0.05 BTC</span></li>
+            <li><span>Mining Reward</span><span class="credit">+0.35 BTC</span></li>
+        </ul>
+        <form class="add-transaction" id="transaction-form">
+            <input type="text" id="description" placeholder="Transaction Description" required>
+            <input type="number" id="amount" placeholder="Amount (BTC)" step="0.01" required>
+            <button type="submit">Add Transaction</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+          </html>
