@@ -1,5 +1,5 @@
 // رمز عبور
-const PASSWORD = "@&@&#&#&";
+const PASSWORD = "%%$$@@admin";
 
 // DOM Elements
 const passwordModal = document.getElementById("password-modal");
